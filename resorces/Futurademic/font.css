@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'FuturaDemiC-Italic';
+  src: url('FuturaDemiC-Italic.woff2') format('woff2'),
+       url('FuturaDemiC-Italic.woff') format('woff'),
+       url('FuturaDemiC-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('FuturaDemiC.woff2') format('woff2'),
+       url('FuturaDemiC.woff') format('woff'),
+       url('FuturaDemiC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
