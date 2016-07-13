@@ -822,7 +822,6 @@ footer {
 	@include site-container;
 	position: relative;
 	height: 159px;
-	background: url('../images/contact-img.png') no-repeat;
 	background-size: cover;
 	background-position: center center;
 
@@ -845,8 +844,30 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
-.contact-page {
-	
+.after-header-contact-us {
+	background: url('../images/contact-img.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-faq {
+	background: url('../images/faq-img.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+.site-container {
+
+	.page-title {
+		display: none;
+	}
+	.page-title-mobile {
+		margin: 16px auto 0;
+		padding-bottom: 14px;
+		text-align: center;
+		color: #dd3025;
+		font: 400 30px / 30px 'FuturaDemiC', sans-serif;
+		border-bottom: 2px solid #009db5;
+	}
+
 	.left-sidebar {
 		display: none;
 		.aside-services-title {
@@ -1154,17 +1175,11 @@ footer {
 			}
 		}
 	}
-	.page-title {
-		display: none;
-	}
-	.page-title-mobile {
-		margin: 16px auto 0;
-		padding-bottom: 14px;
-		text-align: center;
-		color: #dd3025;
-		font: 400 30px / 30px 'FuturaDemiC', sans-serif;
-		border-bottom: 2px solid #009db5;
-	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
+.contact-page {
+	
 	.contact-info {
 		margin: 15px 0 18px;
 
@@ -1223,8 +1238,8 @@ footer {
 			height: 0;
 			overflow: hidden;
 			box-sizing: border-box;
-			width: 708px;
-			height: 371px;
+			max-width: 708px;
+			max-height: 371px;
 
 		    iframe {
 		        position: absolute;
@@ -1439,6 +1454,11 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+.faq-page {
+	overflow: hidden;
+}
+/*--------------------------------*/
+/*--------------------------------*/
 
 
 
@@ -1493,7 +1513,14 @@ footer {
 		}
 	}
 	/*--------------------------------*/
-	.after-header {
+	.after-header-contact-us {
+		.float-title {
+		    width: 28%;
+		    left: 15%;
+		    bottom: 10%;
+	    }
+	}
+	.after-header-faq {
 		.float-title {
 		    width: 28%;
 		    left: 15%;
@@ -2156,7 +2183,26 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
-	.after-header {
+	.after-header-contact-us {
+		height: 463px;
+		.float-title {
+		    position: absolute;
+		    width: 35%;
+		    left: 3%;
+		    bottom: 20%;
+			.sign {
+				color: black;
+				font-size: 53px;
+				line-height: 54px;
+				text-transform: uppercase;
+				font-weight: 400;
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.after-header-faq {
 		height: 463px;
 		.float-title {
 		    position: absolute;
@@ -2177,9 +2223,9 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
-	.contact-page {
-		padding-bottom: 40px;
+	.site-container {
 		overflow: hidden;
+
 		.page-title-mobile {
 			display: none;
 		}
@@ -2218,8 +2264,7 @@ footer {
 				}
 			}
 		}
-		.site-content,	
-		.contact-content {
+		.site-content {
 			padding-bottom: 17px;
 			overflow: hidden;
 
@@ -2235,6 +2280,13 @@ footer {
 				border-bottom: 2px solid #009db5;
 			}
 		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.contact-page {
+		padding-bottom: 40px;
+		overflow: hidden;
+		
 		.map-container {
 		    padding-bottom: 51.25% !important;
 		    padding-top: 0 !important;
@@ -2256,7 +2308,14 @@ footer {
 @media (min-width: 1200px) {
 	/*--------------------------------*/
 	/*--------------------------------*/
-	.after-header {
+	.after-header-contact-us {
+		.float-title {
+		    left: 13.7%;
+		    letter-spacing: -2px;
+		    bottom: 22%;
+		}
+	}
+	.after-header-faq {
 		.float-title {
 		    left: 13.7%;
 		    letter-spacing: -2px;
