@@ -104,6 +104,7 @@ body {
 }
 @mixin direction {
 	@include site-container;
+	overflow: hidden;
     padding: 10px 0;
 	background-image: linear-gradient(to top, #009db5 0%, #00b5d1 100%);
 	box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
@@ -323,6 +324,7 @@ header {
 	  margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu {
+	  position: fixed;
 	  left: 145px;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span {
@@ -822,8 +824,8 @@ footer {
 	@include site-container;
 	position: relative;
 	height: 159px;
-	background-size: cover;
-	background-position: center center;
+	background-size: cover !important;
+	background-position: center center !important;
 
 	.float-title {
 	    position: absolute;
@@ -854,7 +856,13 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-insurance {
+	background: url('../images/insurance-bg.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
 .site-container {
+
 
 	.page-title {
 		display: none;
@@ -1459,6 +1467,35 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.insurance-page {
+	overflow: hidden;
+	.insurance-content {
+		.insurance-list {
+			li {
+				display: block;
+				max-width: 346px;
+				max-height: 151px;
+				height: 126px;
+				border: 2px solid whitesmoke;
+				margin: 12px auto;
+				text-align: center;
+				line-height: 126px;
+				&:last-child {
+					margin: 12px auto 20px;
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
 
 
 
@@ -1513,14 +1550,7 @@ footer {
 		}
 	}
 	/*--------------------------------*/
-	.after-header-contact-us {
-		.float-title {
-		    width: 28%;
-		    left: 15%;
-		    bottom: 10%;
-	    }
-	}
-	.after-header-faq {
+	.after-header {
 		.float-title {
 		    width: 28%;
 		    left: 15%;
@@ -1529,6 +1559,16 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
+	.insurance-page {
+		.insurance-content {
+			.insurance-list {
+				li {
+					height: 151px !important;
+					line-height: 151px !important;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 768px) {
 	/*--------------------------------*/
@@ -1546,7 +1586,23 @@ footer {
 		}
 	}
 	/*--------------------------------*/
-	
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.insurance-page {
+		.insurance-content {
+			.insurance-list {
+				li {
+					float: left;
+					height: 151px !important;
+					line-height: 151px !important;
+					width: 50%;
+					&:nth-child(odd) {
+						margin-right: 18px;
+					}
+				}
+			}
+		}
+	}
 }
 @media (min-width: 1024px) {
 	/*---------------------------------------*/
@@ -2183,7 +2239,7 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
-	.after-header-contact-us {
+	.after-header {
 		height: 463px;
 		.float-title {
 		    position: absolute;
@@ -2202,22 +2258,10 @@ footer {
 			}
 		}
 	}
-	.after-header-faq {
-		height: 463px;
+	.after-header-insurance {
 		.float-title {
-		    position: absolute;
-		    width: 35%;
-		    left: 3%;
-		    bottom: 20%;
 			.sign {
-				color: black;
-				font-size: 53px;
-				line-height: 54px;
-				text-transform: uppercase;
-				font-weight: 400;
-				span {
-					font-weight: 700;
-				}
+				color: #fff;
 			}
 		}
 	}
@@ -2304,18 +2348,23 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
+	.insurance-page {
+		.insurance-content {
+			.page-title {
+				display: none;
+			}
+			.insurance-list {
+				margin-top: 16px;
+			}
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
 }
 @media (min-width: 1200px) {
 	/*--------------------------------*/
 	/*--------------------------------*/
-	.after-header-contact-us {
-		.float-title {
-		    left: 13.7%;
-		    letter-spacing: -2px;
-		    bottom: 22%;
-		}
-	}
-	.after-header-faq {
+	.after-header {
 		.float-title {
 		    left: 13.7%;
 		    letter-spacing: -2px;
