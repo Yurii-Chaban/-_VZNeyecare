@@ -861,6 +861,24 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-lenses {
+	background: url('../images/lenses-bg.png') no-repeat;
+
+	.float-title {
+		.sign {
+			color: #fff;
+		}
+	}
+}
+.lenses-page {
+	.page-title-mobile {
+		display: none !important;
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
 .site-container {
 
 
@@ -1496,7 +1514,35 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
-
+/*--------------------------------*/
+/*--------------------------------*/
+.lenses-page {
+	overflow: hidden;
+	.lenses-content {
+		.lenses-list {
+			li {
+				display: block;
+				max-width: 343px;
+				max-height: 202px;
+				height: 169px;
+				border: 2px solid whitesmoke;
+				margin: 12px auto;
+				text-align: center;
+				line-height: 169px;;
+				&:last-child {
+					margin: 12px auto 20px;
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
 
 
 /*--------------------------------*/
@@ -1569,6 +1615,16 @@ footer {
 			}
 		}
 	}
+	.lenses-page {
+		.lenses-content {
+			.lenses-list {
+				li {
+					height: 202px !important;
+					line-height: 202px !important;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 768px) {
 	/*--------------------------------*/
@@ -1595,6 +1651,21 @@ footer {
 					float: left;
 					height: 151px !important;
 					line-height: 151px !important;
+					width: 50%;
+					&:nth-child(odd) {
+						margin-right: 18px;
+					}
+				}
+			}
+		}
+	}
+	.lenses-page {
+		.lenses-content {
+			.lenses-list {
+				li {
+					float: left;
+					height: 202px !important;
+					line-height: 202px !important;
 					width: 50%;
 					&:nth-child(odd) {
 						margin-right: 18px;
@@ -2355,6 +2426,28 @@ footer {
 			}
 			.insurance-list {
 				margin-top: 16px;
+			}
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.lenses-page {
+		.lenses-content {
+			.page-title {
+				display: none;
+			}
+			.lenses-list {
+				margin-top: 16px;
+			}
+		}
+	}
+	.after-header-lenses {
+		.float-title {
+			width: 60%;
+			.sign {
+				color: #fff;
 			}
 		}
 	}
