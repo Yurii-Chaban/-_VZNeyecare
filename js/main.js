@@ -20,6 +20,30 @@ var swiper_main = new Swiper('.swiper-container-bunner', {
     speed: 1000,
     autoplayDisableOnInteraction: false
 });
+var swiper = new Swiper('.swiper-container-mobile', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 0,
+    freeMode: true,
+    autoplay: 3500,
+    speed: 1000,
+    paginationClickable: true
+});
+var swiper = new Swiper('.swiper-container-desctop', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 13,
+    freeMode: true,
+    autoplay: 3500,
+    speed: 1000,
+    paginationClickable: true
+});
 $(document).ready(function($) {
 	$('.ui.dropdown')
 	  .dropdown()
