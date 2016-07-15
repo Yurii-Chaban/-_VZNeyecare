@@ -1096,34 +1096,6 @@ footer {
 						}
 					} 
 			    }
-			  //   li.services-active {
-			  //   	.diabet {
-					// 	background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
-					// }
-					// .glaucoma {
-					// 	background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
-					// }
-					// .related {
-					// 	background: url('../images/icons/icon_age-related_2.png') no-repeat;
-					// }
-					// .dry-eye {
-					// 	background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
-					// }
-					// .speciality-contact-lenses {
-					// 	background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
-					// }
-					// .cataract-surgery {
-					// 	background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
-					// }
-					// .one-hour-glasses {
-					// 	background: url('../images/icons/icon_one_hour_2.png') no-repeat;
-					// }
-					// .services-sign {
-					// 	a {
-					// 		color: #de3a30;
-					// 	}
-					// }
-			  //   }
 
 				.img-container {
 					float: left;
@@ -1192,6 +1164,37 @@ footer {
 					}
 				}
 			}
+			li.services-active {
+		    	.diabet {
+					background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
+				}
+				.glaucoma {
+					background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
+				}
+				.related {
+					background: url('../images/icons/icon_age-related_2.png') no-repeat;
+				}
+				.dry-eye {
+					background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
+				}
+				.speciality-contact-lenses {
+					background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
+				}
+				.cataract-surgery {
+					background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
+				}
+				.one-hour-glasses {
+					background: url('../images/icons/icon_one_hour_2.png') no-repeat;
+				}
+				.services-sign {
+					&:before {
+						background: #de3a30;
+					}
+					a {
+						color: #de3a30;
+					}
+				}
+		    }
 		}
 		.banner-2 {
 			width: 260px;
