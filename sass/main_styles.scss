@@ -978,6 +978,9 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-macular-degeneration {
+	background: url('../images/macular-degeneration-bg.png') no-repeat;
+}
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-syrgery {
@@ -4007,4 +4010,18 @@ footer {
 	}
 	/*--------------------------------*/
 	/*--------------------------------*/
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-macular-degeneration {
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+		        width: 50%;
+		    .sign-after {
+		    	letter-spacing: 0;
+    			width: 75%;
+		    }
+		}
+	}
 }
