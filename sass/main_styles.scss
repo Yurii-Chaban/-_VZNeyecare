@@ -973,6 +973,13 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-dry-eye-syndrome {
+	background: url('../images/dry-eye-syndrome-bg.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
 .after-header-syrgery {
 	background: url('../images/syrgery-bg.png') no-repeat;
 }
@@ -3981,6 +3988,20 @@ footer {
 		    .sign-after {
 		    	letter-spacing: 0;
     			width: 93%;
+		    }
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-dry-eye-syndrome {
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+		        width: 39%;
+		    .sign-after {
+		    	letter-spacing: 0;
+    			width: 100%;
 		    }
 		}
 	}
