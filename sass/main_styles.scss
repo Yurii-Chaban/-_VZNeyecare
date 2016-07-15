@@ -983,6 +983,14 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-glaucoma-services {
+	background: url('../images/glaucoma-services-bg.png') no-repeat;
+	.sign {
+		color: #fff !important;
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
 .after-header-syrgery {
 	background: url('../images/syrgery-bg.png') no-repeat;
 }
@@ -4022,6 +4030,24 @@ footer {
 		    	letter-spacing: 0;
     			width: 75%;
 		    }
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-glaucoma-services {
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+	        width: 50%;
+	        .sign {
+	        	color: #fff;
+			    .sign-after {
+			    	letter-spacing: 0;
+	    			width: 75%;
+	    			color: #fff;
+			    }
+	        }
 		}
 	}
 }
