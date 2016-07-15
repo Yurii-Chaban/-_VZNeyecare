@@ -109,7 +109,7 @@ body {
 	box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
 	.arrow-back {
 		float: left;
-		margin-left: 5px;
+		margin: 5px 0 0 5px;
 	}
 	.direction-title,
 	.direction-marketing-title {
@@ -937,13 +937,24 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-testimonials {
+	background: url('../images/testimonials.jpg') no-repeat;
+}
+.frames-page {
+	.page-title-mobile {
+		display: none !important;
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
 .after-header-inside {
-	background: url('../images/inside-bg.png') no-repeat;
 	.float-title {
 		width: 50%;
 		.sign {
 			.sign-after {
-				display: block;
+				display: none;
 				color: black;
 				font-size: 22px;
 				font-weight: 400;
@@ -955,6 +966,28 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+.after-header-hours {
+	background: url('../images/one-hour-bg.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-syrgery {
+	background: url('../images/syrgery-bg.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-spec-lens {
+	background: url('../images/spec-lens-bg.png') no-repeat;
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-diabetic {
+	background: url('../images/diabetic-eye-bg.jpg') no-repeat;
+}
 /*--------------------------------*/
 /*--------------------------------*/
 .site-container {
@@ -1329,6 +1362,7 @@ footer {
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 22px;
+			letter-spacing: -0.1px;
 		}
 		.services-inside-img {
 			width: 100%;
@@ -2435,6 +2469,91 @@ footer {
 					&:hover {
 						color: #dd3025;
 					}
+				}
+			}
+		}
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.testimonials-page {
+	overflow: hidden;
+	.testimonials-content {
+		.testimonials-list-desctop {
+			display: none;
+		}
+		.desctop-pagination {
+			display: none;
+		}
+		.mobile-pagination {
+			clear: both;
+			margin: 26px auto 30px;
+			text-align: center;
+			box-sizing: border-box;
+
+			li {
+				display: inline-block;
+				margin: 0 3px;
+				a {
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 11px;
+					color: #00a6c0;
+					@include transition;
+
+					&:hover {
+						color: #dd3025;
+					}
+				}
+			}
+		}
+		.testimonials-list-mobile {
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			overflow: hidden;
+			li {
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				overflow: hidden;
+				margin: 35px auto 0;
+
+				&:first-child {
+					margin: 0 auto;
+				}
+
+				.testimonials-title {
+					margin: 14px 0;
+					a {
+						color: #00a5bf;
+						font-size: 25px;
+						font-weight: 400;
+						line-height: 18px;
+						text-transform: uppercase;
+					}
+				}
+				.testimonials-date {
+					a {
+						color: #dd3025;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 18px;
+					}
+				}
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+					margin: 14px auto 20px;
+					text-align: center;
+				}
+				.testimonials-description {
+					font-weight: 400;
+					line-height: 25px;
+					color: #757575;
+					font-size: 18px;
 				}
 			}
 		}
@@ -3706,6 +3825,109 @@ footer {
 }
 /*--------------------------------*/
 /*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+.testimonials-page {
+	overflow: hidden;
+	.testimonials-content {
+		.testimonials-list-mobile {
+			display: none !important;
+		}
+		.testimonials-list-desctop {
+			display: none;
+		}
+		.mobile-pagination {
+			display: none !important;
+		}
+		.desctop-pagination {
+			display: block !important;
+			clear: both;
+			margin: 0 auto;
+			text-align: center;
+			box-sizing: border-box;
+
+			li {
+				display: inline-block;
+				margin: 0 3px;
+				a {
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 11px;
+					color: #00a6c0;
+					@include transition;
+
+					&:hover {
+						color: #dd3025;
+					}
+				}
+			}
+		}
+		.testimonials-list-desctop {
+			display: block !important;
+			margin: 20px 0 0 0;
+			box-sizing: border-box;
+			overflow: hidden;
+			li {
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				overflow: hidden;
+			    margin: 0 0 31px;
+
+
+				.testimonials-title {
+					margin: 0 0 14px;
+					a {
+						color: #00a5bf;
+						font-size: 25px;
+						font-weight: 400;
+						line-height: 18px;
+						text-transform: uppercase;
+					}
+				}
+				.testimonials-date {
+					a {
+						color: #dd3025;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 18px;
+					}
+				}
+				img {
+					float: left;
+					display: block;
+					max-width: 100%;
+					height: auto;
+					margin: 0 33px 0 0;
+					text-align: center;
+				}
+				.testimonials-description {
+				    margin: 10px 0 0 0;
+					font-weight: 400;
+					line-height: 25px;
+					color: #757575;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
+.after-header-inside {
+	.float-title {
+		width: 50%;
+		.sign {
+			.sign-after {
+				display: block !important;
+			}
+		}
+	}
+}
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
 }
 @media (min-width: 1200px) {
 	/*--------------------------------*/
@@ -3715,6 +3937,51 @@ footer {
 		    left: 13.7%;
 		    letter-spacing: -2px;
 		    bottom: 22%;
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-diabetic {
+		background: url('../images/diabetic-eye-bg.jpg') no-repeat;
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+		    width: 45%;
+		    .sign-after {
+		    	letter-spacing: 0;
+    			width: 80%;
+		    }
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-syrgery {
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+		        width: 39%;
+		    .sign-after {
+		    	letter-spacing: 0;
+    			width: 70%;
+		    }
+		}
+	}
+	/*--------------------------------*/
+	/*--------------------------------*/
+	.after-header-spec-lens {
+		.float-title {
+			left: 13.7%;
+		    letter-spacing: -3px;
+		    bottom: 10%;
+		        width: 39%;
+		    .sign-after {
+		    	letter-spacing: 0;
+    			width: 93%;
+		    }
 		}
 	}
 	/*--------------------------------*/
