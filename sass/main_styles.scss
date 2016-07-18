@@ -298,10 +298,9 @@ header {
 	  color: #fff;
 	  background-color: none;
 	  padding: 0;
-	  float: left;
-	  position: relative;
+	  position: absolute;
 	  top: 28px;
-	  left: 5px;
+	  left: 20px;
 	  cursor: pointer;
 	  transition: left .23s;
 	  z-index: 9999;
@@ -632,27 +631,11 @@ header {
 		    @include transition;
 
 		    &:hover {
-		    	.diabet {
-					background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
-				}
-				.glaucoma {
-					background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
-				}
-				.related {
-					background: url('../images/icons/icon_age-related_2.png') no-repeat;
-				}
-				.dry-eye {
-					background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
-				}
-				.speciality-contact-lenses {
-					background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
-				}
-				.cataract-surgery {
-					background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
-				}
-				.one-hour-glasses {
-					background: url('../images/icons/icon_one_hour_2.png') no-repeat;
-				}
+		    	.img-container {
+		    		@include transition;
+		    		-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+    				filter: grayscale(0);
+		    	}
 				.services-sign {
 					a {
 						color: #de3a30;
@@ -670,40 +653,17 @@ header {
     			margin: 0 18px 0 0;
     			overflow: hidden;
     			box-sizing: border-box;
+    			@include transition;
 
     			img {
     				max-width: 100%;
     				height: auto;
     			}
 			}
-			.diabet {
-				background: url('../images/icons/icon_diabet_eye_1.png') no-repeat;
-				@include transition;	
-			}
-			.glaucoma {
-				background: url('../images/icons/icon_glaucoma_1.png') no-repeat;
-				@include transition;
-			}
-			.related {
-				background: url('../images/icons/icon_age_related_1.png') no-repeat;
-				@include transition;
-			}
-			.dry-eye {
-				background: url('../images/icons/icon_dry_eye_1.png') no-repeat;
-				@include transition;
-			}
-			.speciality-contact-lenses {
-				background: url('../images/icons/icon_speciality_contact_lenses.png') no-repeat;
-				@include transition;
-			}
-			.cataract-surgery {
-				background: url('../images/icons/icon_cataract_surgery_1.png') no-repeat;
-				@include transition;
-			}
-			.one-hour-glasses {
-				background: url('../images/icons/icon_one_hour_1.png') no-repeat;
-				@include transition;
-			}
+			.img-container {
+	    		-webkit-filter: grayscale(1); /* Chrome, Safari, Opera */
+				filter: grayscale(1);
+	    	}
 			.services-sign {
 				float: right;
 				width: 80%;
@@ -1066,27 +1026,11 @@ footer {
 			    @include transition;
 
 			    &:hover {
-			    	.diabet {
-						background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
-					}
-					.glaucoma {
-						background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
-					}
-					.related {
-						background: url('../images/icons/icon_age-related_2.png') no-repeat;
-					}
-					.dry-eye {
-						background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
-					}
-					.speciality-contact-lenses {
-						background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
-					}
-					.cataract-surgery {
-						background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
-					}
-					.one-hour-glasses {
-						background: url('../images/icons/icon_one_hour_2.png') no-repeat;
-					}
+			    	.img-container {
+			    		@include transition;
+			    		-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+	    				filter: grayscale(0);
+			    	}
 					.services-sign {
 						a {
 							color: #de3a30;
@@ -1099,45 +1043,22 @@ footer {
 
 				.img-container {
 					float: left;
-					width: 73px;
-					height: 55px;
+					width: 55px;
+    				height: 55px;
 	    			margin: 0 18px 0 0;
 	    			overflow: hidden;
 	    			box-sizing: border-box;
+	    			@include transition;
 
 	    			img {
 	    				max-width: 100%;
 	    				height: auto;
 	    			}
 				}
-				.diabet {
-					background: url('../images/icons/icon_diabet_eye_1.png') no-repeat;
-					@include transition;	
-				}
-				.glaucoma {
-					background: url('../images/icons/icon_glaucoma_1.png') no-repeat;
-					@include transition;
-				}
-				.related {
-					background: url('../images/icons/icon_age_related_1.png') no-repeat;
-					@include transition;
-				}
-				.dry-eye {
-					background: url('../images/icons/icon_dry_eye_1.png') no-repeat;
-					@include transition;
-				}
-				.speciality-contact-lenses {
-					background: url('../images/icons/icon_speciality_contact_lenses.png') no-repeat;
-					@include transition;
-				}
-				.cataract-surgery {
-					background: url('../images/icons/icon_cataract_surgery_1.png') no-repeat;
-					@include transition;
-				}
-				.one-hour-glasses {
-					background: url('../images/icons/icon_one_hour_1.png') no-repeat;
-					@include transition;
-				}
+				.img-container {
+		    		-webkit-filter: grayscale(1); /* Chrome, Safari, Opera */
+    				filter: grayscale(1);
+		    	}
 				.services-sign {
 					float: right;
 					width: 80%;
@@ -1165,27 +1086,10 @@ footer {
 				}
 			}
 			li.services-active {
-		    	.diabet {
-					background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
-				}
-				.glaucoma {
-					background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
-				}
-				.related {
-					background: url('../images/icons/icon_age-related_2.png') no-repeat;
-				}
-				.dry-eye {
-					background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
-				}
-				.speciality-contact-lenses {
-					background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
-				}
-				.cataract-surgery {
-					background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
-				}
-				.one-hour-glasses {
-					background: url('../images/icons/icon_one_hour_2.png') no-repeat;
-				}
+		    	.img-container {
+		    		-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+    				filter: grayscale(0);
+		    	}
 				.services-sign {
 					&:before {
 						background: #de3a30;
@@ -3152,27 +3056,11 @@ footer {
 			    }
 
 			    &:hover {
-			    	.diabet {
-						background: url('../images/icons/icon_diabet_eye_2.png') no-repeat;	
-					}
-					.glaucoma {
-						background: url('../images/icons/icon_glaucoma_2.png') no-repeat;
-					}
-					.related {
-						background: url('../images/icons/icon_age-related_2.png') no-repeat;
-					}
-					.dry-eye {
-						background: url('../images/icons/icon_dry_eye_2.png') no-repeat;
-					}
-					.speciality-contact-lenses {
-						background: url('../images/icons/icon_speciality_contact_lenses_2.png') no-repeat;
-					}
-					.cataract-surgery {
-						background: url('../images/icons/icon_cataract_surgery_2.png') no-repeat;
-					}
-					.one-hour-glasses {
-						background: url('../images/icons/icon_one_hour_2.png') no-repeat;
-					}
+			    	.img-container {
+			    		@include transition;
+			    		-webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+	    				filter: grayscale(0);
+			    	}
 					.services-sign {
 						a {
 							color: #de3a30;
@@ -3190,40 +3078,18 @@ footer {
 	    			margin: 0;
 	    			overflow: hidden;
 	    			box-sizing: border-box;
+	    			@include transition;
 
 	    			img {
 	    				max-width: 100%;
 	    				height: auto;
 	    			}
 				}
-				.diabet {
-					background: url('../images/icons/icon_diabet_eye_1.png') no-repeat;
-					@include transition;	
-				}
-				.glaucoma {
-					background: url('../images/icons/icon_glaucoma_1.png') no-repeat;
-					@include transition;
-				}
-				.related {
-					background: url('../images/icons/icon_age_related_1.png') no-repeat;
-					@include transition;
-				}
-				.dry-eye {
-					background: url('../images/icons/icon_dry_eye_1.png') no-repeat;
-					@include transition;
-				}
-				.speciality-contact-lenses {
-					background: url('../images/icons/icon_speciality_contact_lenses.png') no-repeat;
-					@include transition;
-				}
-				.cataract-surgery {
-					background: url('../images/icons/icon_cataract_surgery_1.png') no-repeat;
-					@include transition;
-				}
-				.one-hour-glasses {
-					background: url('../images/icons/icon_one_hour_1.png') no-repeat;
-					@include transition;
-				}
+				.img-container {
+		    		@include transition;
+		    		-webkit-filter: grayscale(1); /* Chrome, Safari, Opera */
+    				filter: grayscale(1);
+		    	}
 				.services-sign {
 					float: right;
 					width: 80%;
@@ -3456,7 +3322,8 @@ footer {
 				    margin: 9px auto !important;
 
 				    .img-container {
-				    	margin: 0 -5px 0 0 !important;
+				    	@include transition;
+				    	margin: 0 10px 0 0 !important;
 				    }
 			    	.services-sign {
 					    padding: 0 0 0 5px !important;
