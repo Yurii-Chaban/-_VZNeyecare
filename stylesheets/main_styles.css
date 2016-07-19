@@ -387,7 +387,7 @@ input:checked + #info-mobile {
 .slider .swiper-pagination-bullet {
   width: 16px;
   height: 15px;
-  background-color: #737373;
+  background-color: rgba(115, 115, 115, 0.2);
   border: 1px solid whitesmoke;
 }
 /* line 424, ../sass/main_styles.scss */
@@ -470,7 +470,6 @@ input:checked + #info-mobile {
 }
 /* line 497, ../sass/main_styles.scss */
 .slider .swiper-container-main {
-  width: 100%;
   height: 460px;
 }
 /* line 501, ../sass/main_styles.scss */
@@ -1767,7 +1766,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 1641, ../sass/main_styles.scss */
 .about-us-page .about-us-content .slider-mobile .swiper-container-mobile {
-  width: 100%;
   max-height: 183px;
   height: auto;
   margin: 20px auto;
@@ -1826,7 +1824,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 1697, ../sass/main_styles.scss */
 .about-us-page .about-us-content .slider-desctop .swiper-container-desctop {
-  width: 100%;
   max-height: 154px;
   height: auto;
   margin: 20px auto;
@@ -1942,7 +1939,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 1802, ../sass/main_styles.scss */
 .news-more-page .news-more-content .slider-mobile .swiper-container-mobile {
-  width: 100%;
   max-height: 183px;
   height: auto;
   margin: 20px auto;
@@ -2005,7 +2001,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 1859, ../sass/main_styles.scss */
 .news-more-page .news-more-content .slider-desctop .swiper-container-desctop {
-  width: 100%;
   max-height: 151px;
   height: auto;
   margin: 20px auto;
@@ -2145,7 +2140,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 1969, ../sass/main_styles.scss */
 .article-more-page .article-more-content .slider-mobile .swiper-container-mobile {
-  width: 100%;
   max-height: 183px;
   height: auto;
   margin: 20px auto;
@@ -2208,7 +2202,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 }
 /* line 2026, ../sass/main_styles.scss */
 .article-more-page .article-more-content .slider-desctop .swiper-container-desctop {
-  width: 100%;
   max-height: 151px;
   height: auto;
   margin: 20px auto;
@@ -4325,7 +4318,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
 .after-header-spec-lens .swiper-container,
 .after-header-diabetic .swiper-container {
   overflow: hidden;
-  width: 100%;
   height: 159px;
 }
 /* line 3982, ../sass/main_styles.scss */
@@ -4449,7 +4441,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
   .after-header-spec-lens .swiper-container,
   .after-header-diabetic .swiper-container {
     overflow: hidden;
-    width: 100%;
     height: 250px;
   }
 }
@@ -4495,7 +4486,6 @@ footer .mobile-footer .info-list .social-icon-list li .youtube:hover {
   .after-header-spec-lens .swiper-container,
   .after-header-diabetic .swiper-container {
     overflow: hidden;
-    width: 100%;
     height: 350px;
   }
 }
