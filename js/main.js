@@ -42,7 +42,7 @@ var swiper = new Swiper('.swiper-container-desctop', {
     loop: true,
     slidesPerView: 3,
     paginationClickable: true,
-    spaceBetween: 13,
+    spaceBetween: 0,
     freeMode: true,
     autoplay: 3500,
     speed: 1000,
