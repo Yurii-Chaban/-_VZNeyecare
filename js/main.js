@@ -32,6 +32,10 @@ var swiper = new Swiper('.swiper-container-mobile', {
     speed: 1000,
     paginationClickable: true
 });
+var swiper = new Swiper('.swiper-container-inside-page', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+});
 var swiper = new Swiper('.swiper-container-desctop', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',

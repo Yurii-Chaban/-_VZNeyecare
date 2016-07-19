@@ -179,7 +179,7 @@ header {
 .dropdovn-menu-mobile {
 	.hidden-menu {
 	  display: block;
-	  position: fixed;
+	  position: absolute;
 	  list-style:none;
 	  padding: 35px 0 10px;
 	  margin: 0;
@@ -188,7 +188,7 @@ header {
 	  background-color: #00a7c0;
 	  height: auto;
 	  top: 0;
-	  left: -205px;
+	  left: -450px;
 	  transition: left .2s;
 	  z-index: 999;
 	  -webkit-transform: translateZ(0);
@@ -322,14 +322,13 @@ header {
 	  margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu {
-	  position: fixed;
 	  left: 145px;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span {
 	  background: #fff;
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
-	  left: 0;
+	  left: -15px;
 	}
 }
 
@@ -516,7 +515,6 @@ header {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-        background: #000;
     }
 }
 /*--------------------------------*/
@@ -806,25 +804,27 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-contact-us {
-	background: url('../images/contact-img.png') no-repeat;
+	// background: url('../images/contact-img.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-faq {
-	background: url('../images/faq-img.png') no-repeat;
+	// background: url('../images/faq-img.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-insurance {
-	background: url('../images/insurance-bg.png') no-repeat;
+	// background: url('../images/insurance-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-about-us {
-	background: url('../images/about-us-bg.png') no-repeat;
+	overflow: hidden;
+	// background: url('../images/about-us-bg.png') no-repeat;
 	.float-title {
+		z-index: 9;
 		width: 50%;
 		.sign {
 			color: #fff;
@@ -834,7 +834,7 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-news-more {
-	background: url('../images/news-more-bg.png') no-repeat;
+	// background: url('../images/news-more-bg.png') no-repeat;
 	.float-title {
 		width: 50%;
 		.sign {
@@ -847,7 +847,7 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-article-more {
-	background: url('../images/article-more-bg.png') no-repeat;
+	// background: url('../images/article-more-bg.png') no-repeat;
 	.float-title {
 		width: 50%;
 		.sign {
@@ -860,7 +860,7 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-lenses {
-	background: url('../images/lenses-bg.png') no-repeat;
+	// background: url('../images/lenses-bg.png') no-repeat;
 
 	.float-title {
 		.sign {
@@ -876,17 +876,17 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-frames {
-	background: url('../images/frames-bg.png') no-repeat;
+	// background: url('../images/frames-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-articles {
-	background: url('../images/articles-bg.png') no-repeat;
+	// background: url('../images/articles-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-news {
-	background: url('../images/news-bg.png') no-repeat;
+	// background: url('../images/news-bg.png') no-repeat;
 }
 .frames-page {
 	.page-title-mobile {
@@ -898,7 +898,7 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-testimonials {
-	background: url('../images/testimonials.jpg') no-repeat;
+	// background: url('../images/testimonials.jpg') no-repeat;
 }
 .frames-page {
 	.page-title-mobile {
@@ -927,24 +927,24 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-hours {
-	background: url('../images/one-hour-bg.png') no-repeat;
+	// background: url('../images/one-hour-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-dry-eye-syndrome {
-	background: url('../images/dry-eye-syndrome-bg.png') no-repeat;
+	// background: url('../images/dry-eye-syndrome-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-macular-degeneration {
-	background: url('../images/macular-degeneration-bg.png') no-repeat;
+	// background: url('../images/macular-degeneration-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-glaucoma-services {
-	background: url('../images/glaucoma-services-bg.png') no-repeat;
+	// background: url('../images/glaucoma-services-bg.png') no-repeat;
 	.sign {
 		color: #fff !important;
 	}
@@ -952,19 +952,19 @@ footer {
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-syrgery {
-	background: url('../images/syrgery-bg.png') no-repeat;
+	// background: url('../images/syrgery-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-spec-lens {
-	background: url('../images/spec-lens-bg.png') no-repeat;
+	// background: url('../images/spec-lens-bg.png') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
 .after-header-diabetic {
-	background: url('../images/diabetic-eye-bg.jpg') no-repeat;
+	// background: url('../images/diabetic-eye-bg.jpg') no-repeat;
 }
 /*--------------------------------*/
 /*--------------------------------*/
@@ -2653,6 +2653,29 @@ footer {
 	/*--------------------------------*/
 	/*--------------------------------*/
 	.after-header-about-us {
+		overflow: hidden;
+		.swiper-slide {
+	        text-align: center;
+	        font-size: 18px;
+	        background: #fff;
+	        
+	        /* Center slide text vertically */
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	        img {
+	        	max-width: 100%;
+	        }
+	    }
 		.float-title {
 			.sign {
 				color: #fff !important;
@@ -3917,6 +3940,85 @@ footer {
 	    			color: #fff;
 			    }
 	        }
+		}
+	}
+}
+
+
+
+/*-------------------------------------*/
+.after-header-about-us,
+.after-header-contact-us,
+.after-header-faq,
+.after-header-insurance,
+.after-header-news-more,
+.after-header-article-more,
+.after-header-lenses,
+.after-header-frames,
+.after-header-articles,
+.after-header-news,
+.after-header-testimonials,
+.after-header-hours,
+.after-header-dry-eye-syndrome,
+.after-header-macular-degeneration,
+.after-header-glaucoma-services,
+.after-header-syrgery,
+.after-header-spec-lens,
+.after-header-diabetic {
+	overflow: hidden;
+	.swiper-container {
+		overflow: hidden;
+	    width: 100%;
+	    height: 159px;
+	}
+	.swiper-slide {
+		text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        img {
+        	width: 100%;
+        	height: 100%;
+        }
+	}
+	// background: url('../images/about-us-bg.png') no-repeat;
+	.float-title {
+		z-index: 9;
+	}
+}
+@media (min-width: 1024px) {
+	.after-header-about-us,
+	.after-header-contact-us,
+	.after-header-faq,
+	.after-header-insurance,
+	.after-header-news-more,
+	.after-header-article-more,
+	.after-header-lenses,
+	.after-header-frames,
+	.after-header-articles,
+	.after-header-news,
+	.after-header-testimonials,
+	.after-header-hours,
+	.after-header-dry-eye-syndrome,
+	.after-header-macular-degeneration,
+	.after-header-glaucoma-services,
+	.after-header-syrgery,
+	.after-header-spec-lens,
+	.after-header-diabetic {
+		.swiper-container {
+			height: 463px;
 		}
 	}
 }
